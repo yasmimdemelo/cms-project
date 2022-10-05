@@ -1,5 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+import datetime
 
 def index(request):
-    return HttpResponse("Mozãooooo te amooooo <3 ")
+    now = datetime.datetime.now()
+    #html = "<html><body>It is now %s.</body></html>" % now
+
+    return render(request, 'doc/index.html')
