@@ -1,9 +1,21 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Documents
+from .form import DocumentsForm
 
 def index(request):
     data = {}
     data['documents'] = Documents.objects.all()
 
     return render(request, 'doc/index.html', data)
+
+def new_document(request):
+    data = {}
+    form = DocumentsForm(request.POST or None)
+
+    if form.is_valid():
+        form.save()
+        return index(request)
+
+    data['form'] = form
+    return render(request, 'doc/form.html', data)
