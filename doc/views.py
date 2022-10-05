@@ -1,9 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-import datetime
 
 def index(request):
-    now = datetime.datetime.now()
-    #html = "<html><body>It is now %s.</body></html>" % now
+    data = {}
+    data['documents'] = ['Doc01', 'Doc02', 'Doc03', 'Doc04']
 
-    return render(request, 'doc/index.html')
+    return render(request, 'doc/index.html', data)

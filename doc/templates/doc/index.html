@@ -8,5 +8,18 @@
 </head>
 <body>
     <h1>Welcome</h1>
+
+    <ul>
+    {% for document in documents %}
+
+        {% if document == "Doc01" %}
+            <li><b>{{ document }}</b></li>
+        {% else %}
+            <li>{{ document }}</li>
+
+        {% endif %}
+
+    {% endfor %}
+    </ul>
 </body>
 </html>
