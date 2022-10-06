@@ -1,0 +1,41 @@
+1-Primeira coisa a ser feita: Crie um repositório no github, para acompanhar o versionamento e salvar tudo dentro desse repositório o que envolver esse projeto.
+
+
+
+
+Análise de requisitos (gravar a call ou conversa, para poder rever depois e não sair do MVP)
+Durante a call ou conversa seja 100% tempo de qualidade para filtrar tudo o que o cliente gostaria em seu produto. 
+
+Ferramenta de organização de doc (cms). 
+
+Ver example do notion dia 01
+
+
+MVP = 
+	1- App que crie um template de doc ao clicar em um botao
+	2- Que tenha titulo e descrição 
+	3- Postgress
+
+	- Adicionar tags
+	- Adc formatação basicas, negrito, italico, etc.
+	
+
+
+Prototipagem = 
+
+	- Com a analise de requisitos feita, tire do imaginável e traga para o paupavél. (Excalidraw é um app para isso)
+	- Faça um preview "desenhe" e mostre ao cliente para ver se é isso que ele imaginou e gostaria do produto final. 
+
+
+
+Descrever =
+	- Fazer um doc para descrever todo o processo desde o inicio (criar repo no github).
+	
+	
+	
+	
+	
+
+
+
+
