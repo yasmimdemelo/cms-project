@@ -10,12 +10,10 @@
     <h1>Documents</h1>
 
     <ul>
-    {% for document in Documents %}
+    {% for document in documents %}
 
-        {% if document == "Doc01" %}
             <li> {{ document }} </li>
-        {% endif %}
-        
+
     {% endfor %}
     </ul>
 
