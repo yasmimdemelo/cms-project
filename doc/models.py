@@ -1,7 +1,7 @@
 from django.db import models
 
 class Documents(models.Model):
-    title = models.CharField(max_length=100, primary_key=True)
+    title = models.CharField(max_length=100)
     dt_criacao = models.DateTimeField(auto_now_add=True)
     descricao = models.TextField(null=True, blank=True)
 
