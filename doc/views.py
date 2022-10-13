@@ -29,5 +29,4 @@ def read(request, pk):
         form.save()
         return redirect('index')
 
-    data['form'] = form
     return render(request, 'doc/read.html', data)
