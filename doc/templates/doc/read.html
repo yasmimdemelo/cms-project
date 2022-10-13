@@ -7,15 +7,15 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Reading</h1>
+    <ul>
+        {% for document in documents %}
     
-<form method="POST">
-    {% csrf_token %}
-
-    {{ form.as_p }}
+                <li> {{ document }} </li>
     
-    <button type="submit">Add</button>
-    <a href="{% url 'index' %}">Return</a>
-</form>
-
+        {% endfor %}
+        </ul>
+    
+        <a href="{% url 'index' %}">Return</a>
 </body>
 </html>

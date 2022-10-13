@@ -19,3 +19,15 @@ def new_document(request):
 
     data['form'] = form
     return render(request, 'doc/form.html', data)
+
+def read(request, pk):
+    data = {}
+    document = Documents.objects.get(pk=pk)
+    form = DocumentsForm(request.POST or None, instance=document)
+
+    if form.is_valid():
+        form.save()
+        return redirect('index')
+
+    data['form'] = form
+    return render(request, 'doc/read.html', data)
