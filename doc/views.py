@@ -22,11 +22,6 @@ def new_document(request):
 
 def read(request, pk):
     data = {}
-    document = Documents.objects.get(pk=pk)
-    form = DocumentsForm(request.POST or None, instance=document)
-
-    if form.is_valid():
-        form.save()
-        return redirect('index')
+    data["documents"] = Documents.objects.filter(pk=pk)
 
     return render(request, 'doc/read.html', data)
