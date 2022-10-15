@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    height: 100%;
+    margin: 20px;
+    border-style: solid;
+    border-width: medium;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+    color: blue;
+}
+
+.menu {
+    width: 100%;
+    text-align: center;
+  }
+  
+.menu a {
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: rgb(17, 21, 134);
+  }
+
+ul {
+    list-style-type: none;
+   }
+
+.btn-primary {
+  color: rgb(17, 21, 134);
+  text-decoration: none;
+  border-color: black;
+  border-style: solid;
+}

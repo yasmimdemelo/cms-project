@@ -1,21 +1,33 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS file -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
     <title>Document</title>
 </head>
 <body>
-    <h1>Documents</h1>
 
-    <ul>
-    {% for document in documents %}
+    <div>
+        <h1>Documents</h1>
+    </div>
 
-            <li><a href="{% url 'read' document.id %}"> {{ document }} </a></li>
-
-    {% endfor %}
-    </ul>
+    <div style="overflow:auto">
+        <div class="menu">
+            <ul>
+                {% for document in documents %}
+                    <li>
+                        <a class="btn btn-primary" href="{% url 'read' document.id %}"> {{ document.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 
     <a href="{% url 'form' %}">New Document</a>
 
