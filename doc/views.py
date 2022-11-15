@@ -1,7 +1,7 @@
 from django.shortcuts import redirect, render
 from django.http import HttpResponse
 from .models import Documents
-from .form import DocumentsForm
+from .forms import DocumentsForm
 
 def index(request):
     data = {}
