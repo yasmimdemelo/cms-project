@@ -5,21 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../../static/css/style.css">
 </head>
 <body>
 
-    <h1>Reading</h1>
+    <div class="container-read">
+        <div class="read">
+            <ul>
+                {% for document in documents %}
 
-    <ul>
-        {% for document in documents %}
+                    {{ document.title }}</br>
+                    {{ document.descricao}} 
 
-            {{ document.title }}</br>
-            {{ document.descricao}} 
-
-        {% endfor %}
-    </ul>
-    
-    <a href="{% url 'index' %}">Return</a>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <a id="read" href="{% url 'index' %}">Return</a>
 
 </body>
 </html>

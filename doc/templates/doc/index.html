@@ -10,26 +10,31 @@
     <!-- CSS file -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-    <title><img src="../../static/img/word.png">Document</title>
+    <title>Document</title>
 </head>
 
 <body>
-
-    <h1>Documents</h1>
+    <div class="container">
+        <div class="header">
+            <h1><img src="../../static/img/word.png" width="50">Documents</h1>
+        </div>
+    </div>
 
     <div class="menu">
         <ul>
             {% for document in documents %}
             <li>
-                <a class="btn btn-primary" href="{% url 'read' document.id %}"><img src="../../static/img/docs.png"> {{ document.title }}</a>
+                <a id="new" class="btn btn-primary" href="{% url 'read' document.id %}"><img src="../../static/img/docs.png"> {{ document.title }}</a>
             </li>
             {% endfor %}
         </ul>
     </div>
 
 <div class="footer">
-    <a href="{% url 'form' %}">New document</a>
-   <a id="plus" href="{% url 'form'%}"><img src="../doc/../../static/img/plus.png"></a>
+    <div class="footer-new">
+        <a href="{% url 'form' %}">New document</a>
+        <a id="plus" href="{% url 'form'%}"><img src="../doc/../../static/img/plus.png" width="40"></a>
+    </div>
 </div>
 
 </body>

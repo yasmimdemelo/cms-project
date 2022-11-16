@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    display: block;
   }
 
 body {
@@ -9,22 +8,42 @@ body {
     margin: 20px;
     border-style: solid;
     border-width: medium;
-    width: 89%;
-    height: 95vh;
+    width: 96%;
+    height: 90vh;
 }
 
-h1 {
+.container {
+  text-align: center;
+}
+
+.container .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+  vertical-align: middle;
+}
+
+.header img {
+  vertical-align: middle;
+  margin: 0;
+}
+
+.header h1 {
     text-align: center;
     font-style: italic;
     color: blue;
-    padding: 50px;
     font-size: 2em;
+    margin-top: 5px;
+}
+
+div.menu {
+  margin-left: 33%;
 }
 
 .menu a {
-    margin-top: 7px;
     display: inline-block;
-    width: 80%;
+    width: 50%;
     color: rgb(17, 21, 134);
     text-align: center;
 }
@@ -61,22 +80,51 @@ a {
   color: black;
   border: 1px solid black;
   padding: 10px;
-  margin-left: 25%;
   font-style: italic;
 }
 
-img {
-  display:block;
-  text-align: center;
-  width: 25px;
+.footer {
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  margin-left: 50%;
 }
 
-a#plus {
+#plus {
   border: none;
   margin: 0;
   padding: 0;
+  vertical-align: middle;
+}
+
+.container-read {
+  text-align: center;
+  padding: 100px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  font-size: larger;
+}
+
+.container-read .read ul {
+  padding: 0;
+}
+
+#read {
+  justify-content: center;
+  border-radius: 10px;
+  background: blue;
+  color: white;
+  margin-left: 46%;
+}
+
+#form-add {
+  background: blue;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 #form {
-  text-decoration: none;
+  justify-content: center;
+  align-items: center;
 }
