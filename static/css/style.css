@@ -116,31 +116,28 @@ a {
 }
 
 form {
-  display: inline-block;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 20%;
-  margin-right: 20%;
   line-height: 1.6;
-  height: 600px;
+  flex-direction: column;
 }
 
 input {
-  display: inline-block;
-  width: 100%;
   text-align: center;
   padding: 5px;
-  letter-spacing: 2px;
-  line-height: 0.6;
+  letter-spacing: 1px;
+  line-height: 1.6;
   font-style: italic;
   font-size: 25px;
 }
 
 textarea {
   text-align: center;
-  width: 100%;
+
+  width: 90%;
   padding: 15px;
   font-style: italic;
-  height: 560px;
+  height: 60vh;
   font-size: 25px;
 }
