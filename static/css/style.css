@@ -7,7 +7,7 @@ body {
     display: block;
     margin: 20px;
     border-style: solid;
-    height: 92vh;
+    height: 91vh;
 }
 
 .container {
@@ -18,7 +18,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 35px;
+  padding: 24px;
   vertical-align: middle;
 }
 
@@ -32,7 +32,7 @@ body {
     font-style: italic;
     color: blue;
     font-size: 2em;
-    margin-top: 5px;
+    /* margin-top: 5px; */
 }
 
 div.menu {
@@ -48,7 +48,7 @@ ul {
 }
 
 li {
-  padding: 5px;
+  padding: 2px;
   display: list-item;
 }
 
@@ -60,19 +60,23 @@ a.btn.btn-primary {
   justify-content: center;
   align-items: center;
   letter-spacing: 1px;
+  text-decoration: none;
 }
 
 a {
   border: 1px solid black;
   font-style: italic;
+  text-decoration: none;
+  padding: 5px;
+  color: blue;
 }
 
 .footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 35px;
-  margin-left: 10%;
+  padding: 12px;
+  margin-left: 6%;
   vertical-align: middle;
 }
 
