@@ -113,7 +113,7 @@ a {
   border-radius: 10px;
   padding: 10px;
   font-size: 15px;
-  margin-inline-start: -20em;
+  margin-inline-start: -39em;
 
 }
 
@@ -134,9 +134,9 @@ input {
   padding: 5px;
   letter-spacing: 1px;
   font-style: italic;
-  font-size: 15px;
-  margin-inline-start: -10em;
-  width: 500%;
+  font-size: 25px;
+  margin-inline-start: -8em;
+  margin-inline-end: -8em;
 }
 
 textarea {
