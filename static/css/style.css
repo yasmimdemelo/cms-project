@@ -111,8 +111,8 @@ a {
   vertical-align: middle;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-left: -33em;
+  margin-top: 5px;
+
 }
 
 #form-add {
@@ -135,7 +135,6 @@ a {
 form {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -145,20 +144,24 @@ p {
 }
 
 input {
+  display: flex;
+  margin-left: 25%;
+  width: 50%;
   text-align: center;
+  align-items: center;
   padding: 5px;
   letter-spacing: 1px;
   font-style: italic;
-  font-size: 25px;
-  margin-inline-start: -8em;
-  margin-inline-end: -8em;
+  font-size: 20px;
 }
 
 textarea {
+  display: flex;
+  margin-left: 25%;
+  width: 50%;
   text-align: center;
-  width: 90%;
-  padding: 15px;
+  align-items: center;
+  padding: 05px;
   font-style: italic;
-  height: 60vh;
-  font-size: 25px;
+  font-size: 20px;
 }
