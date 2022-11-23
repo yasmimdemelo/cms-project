@@ -104,7 +104,15 @@ a {
   border-radius: 10px;
   background: blue;
   color: white;
-  margin-left: 46%;
+  margin-left: 48%;
+}
+
+.button-form {
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -33em;
 }
 
 #form-add {
@@ -113,8 +121,15 @@ a {
   border-radius: 10px;
   padding: 10px;
   font-size: 15px;
-  margin-inline-start: -39em;
+}
 
+#form-return {
+  background: #0000ff;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+  margin-left: 5px;
 }
 
 form {
