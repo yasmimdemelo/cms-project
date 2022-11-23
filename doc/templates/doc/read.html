@@ -22,7 +22,18 @@
             </ul>
         </div>
     </div>
-    <a id="read" href="{% url 'index' %}">Return</a>
+    
+    <div class="read-button">
+        <a id="read" href="{% url 'index' %}">Return</a>
+        {% csrf_token %}
+        <form method="POST" action="{% for document in documents %} {% url 'delete' document.id %} {% endfor %}">
+            {% csrf_token %}
+
+            <input id="delete" type="submit" value="Delete"/>
+
+        </form>
+        
+    </div>
 
 </body>
 </html>

@@ -1,11 +1,13 @@
-from django import forms
+from django.forms import ModelForm
 from .models import Documents
+from django import forms
 
-class DocumentsForm(forms.ModelForm):
+class DocumentsForm(ModelForm):
     error_css_class = 'error-field'
     required_css_class = 'required-field'
-    title = forms.CharField(label='', widget=forms.TextInput(attrs={"class": "form-control", "placeholder": "Title"}))
+    title = forms.CharField(label='', widget=forms.TextInput(attrs={"class": "form-control", "placeholder": "Document title"}))
     descricao = forms.CharField(label='', widget=forms.Textarea(attrs={"placeholder":"Descrição"}))
+
     class Meta:
         model = Documents
         fields = ['title', 'descricao']

@@ -1,7 +1,7 @@
 from django.shortcuts import redirect, render
-from django.http import HttpResponse
+# from django.http import HttpResponse
 from .models import Documents
-from .forms import DocumentsForm
+from .form import DocumentsForm
 
 def index(request):
     data = {}
@@ -25,3 +25,11 @@ def read(request, pk):
     data["documents"] = Documents.objects.filter(pk=pk)
 
     return render(request, 'doc/read.html', data)
+
+def delete(request, pk):
+    document = Documents.objects.get (pk=pk)
+    if request.method == "POST":
+        document.delete()
+        return redirect('index')
+
+    return render(request, 'index.html')

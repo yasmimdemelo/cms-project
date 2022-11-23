@@ -89,14 +89,31 @@ a {
 
 .container-read {
   text-align: center;
-  padding: 100px;
+  margin-top: 15%;
+  margin-left: 25%;
+  width: 50%;
   letter-spacing: 1px;
   line-height: 1.6;
   font-size: larger;
+  display: flex;
+  justify-content: center;
 }
 
-.container-read .read ul {
-  padding: 0;
+.container-read .read ul{
+  justify-content: center;
+  display: flex;
+  width: 40%;
+  margin-left: 25%;
+}
+
+.read-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  margin-left: 25%;
+  width: 50%;
+  margin-top: 10%;
 }
 
 #read {
@@ -104,7 +121,17 @@ a {
   border-radius: 10px;
   background: blue;
   color: white;
-  margin-left: 48%;
+}
+
+#delete {
+  border-radius: 10px;
+  background: blue;
+  color: white;
+  margin-left: 5px;
+  font-style: italic;
+  font-size: 16px;
+  padding: 4px;
+  width: 100%;
 }
 
 .button-form {
@@ -112,7 +139,6 @@ a {
   display: flex;
   justify-content: center;
   margin-top: 5px;
-
 }
 
 #form-add {
