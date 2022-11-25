@@ -25,5 +25,8 @@
   
  ## Requirements
  
+ - Django==4.1.2
+ - sqlparse==0.4.3
+ 
  
  ## How use 🔧
