@@ -13,11 +13,12 @@
  ## Planning 📋
  Excalidraw: 
  - Prototype
-  ![image](https://user-images.githubusercontent.com/107228786/204006153-c3f47a02-af80-4dc7-8169-8ca1f89c101d.png)
+     
+     ![prototype](https://user-images.githubusercontent.com/107228786/204012426-fbd80ab9-2a73-483f-bf00-15e26b780c47.png)
   
  - Finished
- ![image](https://user-images.githubusercontent.com/107228786/204010020-544295a0-b7ca-4cab-a15e-46d33fe212ba.png)
- ![image](https://user-images.githubusercontent.com/107228786/204010111-8256697b-bf64-4f8f-a5e4-d51035c77942.png)
+     
+     
   
  ## Requirements
  
