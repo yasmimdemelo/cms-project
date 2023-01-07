@@ -29,33 +29,33 @@
  - sqlparse==0.4.3
  
  ## Install 🚀
- - Create and open a folder for the project or clone a directory from the Git hub on your machine.
+ 1.Create and open a folder for the project or clone a directory from the Git hub on your machine.
  
- - Instal and activate a virtual environment:
+ 2.Instal and activate a virtual environment:
   - python -m venv .venv
   - source .venv/bin/activate
   
- - Open VS code:
+ 3.Open VS code:
   - code .
   
- - Select interpret venv:
+ 4.Select interpret venv:
   - Ctrl + shift + p
   - ‘.venv:venv’
   
- - Update pip:
+ 5.Update pip:
   - python -m pip install --upgrade pip
   
- - Install Django:
+ 6.Install Django:
   - python -m pip install django
   
- - Install conector psycopg:
+ 7.Install conector psycopg:
   - pip install psycopg2-binary
   
- - Fix your dependencies:
+ 8.Fix your dependencies:
   - python -m pip freeze > requirements.txt
  
- - Create Django project:
+ 9.Create Django project:
   - django-admin startproject <name> .
   
- - Create a Django app:
+ 10.Create a Django app:
   - python manage.py startapp <name>
