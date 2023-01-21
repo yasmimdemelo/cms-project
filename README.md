@@ -1,4 +1,4 @@
-# Project CMS
+# CMS Project
  CMS means content management system.
  It is computer software or an application that uses a database to manage all content.
  
